@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sofia+Sans+Semi+Condensed&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+body {
+  background: radial-gradient(
+    circle at 15% 43%,
+    rgba(0, 255, 141, 0.44) 0%,
+    rgba(0, 188, 212, 0.5) 41%,
+    rgba(150, 130, 238, 0.48) 100%
+  );
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 20px 0 0 0;
+  background-color: rgb(117, 253, 54);
+}
+.navbar--logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar--logo .logo {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.navbar--logo .tagline {
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+  font-weight: 650;
+  border-top: 1px solid #ffffff;
+  color: #000000;
+  padding: 3px 0 5px 5px;
+  text-align: center;
+}
+
+#warnning {
+  color: red;
+  margin-top: 20px;
+}
+.none {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.login__box {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.border--box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #1c035744;
+  box-shadow: 3px 3px rgba(1, 29, 16, 0.44);
+  border-radius: 5px;
+  width: 400px;
+  height: 400px;
+}
+.border--box h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 28px;
+  position: absolute;
+  margin: 50px 0;
+}
+.login--input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.input lable {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 0;
+  color: #1b1b1b;
+}
+.input input {
+  display: flex;
+  width: 200px;
+  height: 25px;
+}
+.login--input input {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  border-bottom: 1px solid #1b1b1b;
+  background: transparent;
+}
+.login--btn {
+  width: 100%;
+  background-color: aqua;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 3px;
+  font-family: "ubantu", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* dashboard css */
+
+body {
+  background: radial-gradient(
+    circle at 15% 43%,
+    rgba(0, 255, 141, 0.44) 0%,
+    rgba(0, 188, 212, 0.5) 41%,
+    rgba(150, 130, 238, 0.48) 100%
+  );
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 50px 0 0 20px;
+}
+.container-one {
+  width: 15vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.514);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  padding-left: 25px;
+}
+
+.container-one .menu > div {
+  padding: 25px 0px 0px 25px;
+}
+.menu-opt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.menu-opt img {
+  width: 25px;
+  margin-right: 5px;
+}
+#logout {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #000;
+  width: 100%;
+  color: red;
+  display: flex;
+  align-items: flex-end;
+}
+.nav-link a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+.nav-link:hover {
+  position: relative;
+  width: 100px;
+  translate: scale(20, 30);
+}
+.container-two {
+  width: 50%;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  margin: 0 0 0 30px;
+}
+.conatiner-two-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container-two-heading {
+  font-size: 29px;
+  font-weight: 700;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user-name {
+  padding: 0;
+  margin: 5px 3px 5px 0;
+  font-size: 13px;
+}
+.user-msg {
+  font-size: 13px;
+}
+.balance-box-container {
+  width: 43vw;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 0 20px 40px;
+  margin: 10px 0 0 0;
+  box-shadow: 3px 3px #0000003f;
+}
+.balance-text {
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgba(68, 0, 255, 0.555);
+}
+.available-balance {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.acc-details {
+  display: flex;
+  gap: 10px;
+}
+.show-transaction-history {
+  display: flex;
+}
+.transaction-heading {
+  /* width: 90%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 4.5rem;
+  margin-top: 1rem;
+  background-color: aliceblue;
+  padding: 1rem;
+}
+.transaction-heading > div {
+  font-size: 0.99rem;
+}
+.container-three {
+  width: 20%;
+}
+.transfer-box {
+  width: 300px;
+  height: 300px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0000003f;
+  border-radius: 10px;
+}
+#error--msg {
+  font-size: 15px;
+  font-weight: 100;
+  color: red;
+}
+.transfer-box p {
+  font-family: "Lato", serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.transfer-option {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0 15px 0;
+  font-family: "Lato", serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.transfer-option-btn-one {
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(11, 7, 61);
+}
+.transfer-option-btn-two {
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(11, 7, 61);
+}
+.transfer-details {
+  display: flex;
+  flex-direction: column;
+}
+.active {
+  background: rgb(26, 179, 240);
+}
+.none {
+  display: none !important;
+}
+.transfer-mobile-number {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003f;
+  margin: 0 0 8px 0;
+}
+
+.transfer-account-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 5px 0;
+}
+
+.transfer-mobile-number input {
+  width: 100%;
+  height: 30px;
+  padding: 2px 2px;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 18px;
+}
+.acount-number {
+  width: 100%;
+}
+.acount-number input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 18px;
+  border-bottom: 1px solid #0000003f;
+}
+.ifsc-code {
+  width: 100%;
+}
+.ifsc-code input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 18px;
+  border-bottom: 1px solid #0000003f;
+}
+.transfer-amount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003f;
+}
+.transfer-amount input {
+  width: 200px;
+  height: 30px;
+  padding: 2px 10px;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.transfer-btn {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  background: rgb(158, 255, 12);
+  padding: 8px;
+  color: rgb(2, 8, 1);
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  .border--box {
+    width: 80vw;
+    height: 60vh;
+  }
+  .app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+  }
+  .container-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: #ffffff;
+  }
+  .logo {
+    font-size: 10px;
+    padding: 0;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .container-one .menu > div {
+    padding: 5px 5px;
+  }
+  .container-two {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .balance-box-container {
+    width: 300px;
+    padding: 15px;
+  }
+  .available-balance {
+    font-size: 35px;
+  }
+  .transaction-heading {
+    gap: 1rem;
+  }
+  .container-three {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+}
+
+/* text trackin */
+.tracking-in-expand-fwd {
+  -webkit-animation: tracking-in-expand-fwd 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.9s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* animation */
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-30 7:39:23
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* //exit */
+.scale-out-center {
+  -webkit-animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: scale-out-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-30 7:35:53
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+}
+
+/* flip in */
+.flip-in-ver-right {
+  -webkit-animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-30 7:46:40
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}

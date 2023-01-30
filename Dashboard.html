@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Banklet - Make Your Transaction Smooth</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/dashboard.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="container-one">
+        <div class="logo"><h2>Bank App</h2></div>
+        <div class="menu">
+          <div class="menu-opt one">
+            <img src="./asset/overview.svg" />
+            <div class="nav-link"><a href="#">Overview</a></div>
+          </div>
+          <div class="menu-opt two">
+            <img src="./asset/report.svg" />
+            <div class="nav-link"><a href="#">Reports</a></div>
+          </div>
+          <div class="menu-opt three">
+            <img src="./asset/card.svg" />
+            <div class="nav-link"><a href="#">Card</a></div>
+          </div>
+          <div class="menu-opt four">
+            <img src="./asset/contact.svg" />
+            <div class="nav-link"><a href="#">Support</a></div>
+          </div>
+        </div>
+        <div class="notification"></div>
+      </div>
+      <div class="container-two">
+        <div class="container-balance-box">
+          <div class="conatiner-two-name">
+            <div class="container-two-heading">Overview</div>
+            <div class="user">
+              <p class="user-name">Hi Ramkrishna,</p>
+              <p class="user-msg">Welcome Back !</p>
+            </div>
+          </div>
+          <div class="balance-box-container">
+            <div class="balance-text">Your Balance</div>
+            <div class="available-balance">$5000.00</div>
+            <div class="acc-details">
+              <p>Saving A/C :</p>
+              <p>1234567891234</p>
+              <div class="show-acc-number">
+                <img src="asset/eye-off-line.svg" alt="show-acc-number" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-transaction-history">
+          <div class="transaction-heading">
+            <div class="transaction-date">Tran. Date</div>
+            <div class="particular">Particulars</div>
+            <div class="withdrawl">Withdrawl</div>
+            <div class="deposit">Deposit</div>
+            <div class="balance">balance</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-three">
+        <div class="transfer-box">
+          <p>QUICK PAY</p>
+          <div class="transfer-option">
+            <div class="transfer-option-btn-one active" id="mobile">
+              Via Mobile No.
+            </div>
+            <div class="transfer-option-btn-two" id="account">Via Acc No.</div>
+          </div>
+          <div class="transfer-details">
+            <div class="transfer-mobile-number" id="mobile-transfer">
+              <div class="transfer-country-code">+91</div>
+              <input
+                type="number"
+                name="phoneno"
+                placeholder="1234567890"
+                autocomplete="off"
+              />
+            </div>
+            <div class="transfer-account-number none" id="account-transfer">
+              <div class="acount-number">
+                <input
+                  type="number"
+                  name="accno"
+                  placeholder="1234567890"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="ifsc-code">
+                <input
+                  type="number"
+                  name="ifsc"
+                  placeholder="IFSCCODE0000"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div class="transfer-amount">
+              <div class="transfer-currency-icon">₹</div>
+              <div class="amount">
+                <input type="number" placeholder="000.00" />
+              </div>
+              <div class="currency-name">INR</div>
+            </div>
+            <div class="transfer-btn">SEND</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/dashboard.js"></script>
+  </body>
+</html>

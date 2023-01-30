@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banklet - Make Your Transaction Smooth</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container" id="login-page">
+      <div class="header">
+        <div class="navbar--logo tracking-in-expand-fwd">
+          <p class="logo">Banklet</p>
+          <p class="tagline">Make Your Transaction Smooth</p>
+        </div>
+      </div>
+      <div class="login__box scale-in-center">
+        <div class="border--box">
+          <h1>Login</h1>
+          <p id="warnning" class="none">Incorrect Username or Password</p>
+          <div class="login--input">
+            <div class="login-user input">
+              <lable class="login__username lable flip-diagonal-2-tl"
+                >Username</lable
+              >
+              <input type="text" name="username" id="username" />
+            </div>
+            <div class="login--password input">
+              <lable class="login__password lable">Password</lable>
+              <input type="text" name="password" id="password" />
+            </div>
+            <div class="login--btn btn">
+              <p id="login-btn">Login</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app" class="none app">
+      <div class="container-one">
+        <div class="logo"><h2>Bank App</h2></div>
+        <div class="menu">
+          <div class="menu-opt one">
+            <img src="./asset/overview.svg" />
+            <div class="nav-link"><a href="#">Overview</a></div>
+          </div>
+          <div class="menu-opt two">
+            <img src="./asset/report.svg" />
+            <div class="nav-link"><a href="#">Reports</a></div>
+          </div>
+          <div class="menu-opt three">
+            <img src="./asset/card.svg" />
+            <div class="nav-link"><a href="#">Card</a></div>
+          </div>
+          <div class="menu-opt four">
+            <img src="./asset/contact.svg" />
+            <div class="nav-link"><a href="#">Support</a></div>
+          </div>
+          <div class="menu-opt four" id="logout">
+            <img src="./asset/logout.svg" />
+            <div class="nav-link"><a href="#">Logout</a></div>
+          </div>
+        </div>
+        <div class="notification"></div>
+      </div>
+      <div class="sidebar"></div>
+      <div class="container-two">
+        <div class="container-balance-box">
+          <div class="conatiner-two-name">
+            <div class="container-two-heading">Overview</div>
+            <div class="user">
+              <p class="user-name">
+                Hi <span class="user-name" id="user-name">Ramkrishna</span>
+              </p>
+              <p class="user-msg">Welcome Back !</p>
+            </div>
+          </div>
+          <div class="balance-box-container">
+            <div class="balance-text">Your Balance</div>
+            <div class="available-balance" id="avaiBal">₹0000.00</div>
+            <div class="acc-details">
+              <p>Saving A/C :</p>
+              <p id="acc-no">00000000000000</p>
+              <div class="show-acc-number">
+                <img
+                  id="show-acc-no"
+                  src="asset/eye-off-line.svg"
+                  alt="show-acc-number"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-transaction-history">
+          <!-- <p>Last 5 Transaction</p> -->
+        </div>
+      </div>
+      <div class="container-three">
+        <div class="transfer-box">
+          <p>QUICK PAY</p>
+          <p class="none" id="error--msg">Please Fill All Details</p>
+          <div class="transfer-option">
+            <div class="transfer-option-btn-one active" id="mobile">
+              Via Mobile No.
+            </div>
+            <div class="transfer-option-btn-two" id="account">Via Acc No.</div>
+          </div>
+          <div class="transfer-details">
+            <div class="transfer-mobile-number" id="mobile-transfer">
+              <div class="transfer-country-code">+91</div>
+              <input
+                type="number"
+                name="phoneno"
+                placeholder="1234567890"
+                autocomplete="off"
+                id="phone-no"
+              />
+            </div>
+            <div class="transfer-account-number none" id="account-transfer">
+              <div class="acount-number">
+                <input
+                  type="number"
+                  name="accno"
+                  placeholder="1234567890"
+                  autocomplete="off"
+                  id="accnumber"
+                />
+              </div>
+              <div class="ifsc-code">
+                <input
+                  type="text"
+                  name="ifsc"
+                  placeholder="IFSCCODE0000"
+                  autocomplete="off"
+                  id="ifsc"
+                />
+              </div>
+            </div>
+            <div class="transfer-amount">
+              <div class="transfer-currency-icon">₹</div>
+              <div class="amount">
+                <input type="number" placeholder="000.00" id="amount" />
+              </div>
+              <div class="currency-name">INR</div>
+            </div>
+            <div class="transfer-btn" id="send">SEND</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
